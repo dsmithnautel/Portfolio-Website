@@ -75,13 +75,19 @@ nav ul div img {
   font-size: 3em;
 }
 
-.rainbow {
+.name {
   display: inline-block;
-  transition: color .05s;
+  background-image: linear-gradient(90deg, black 25%, #00f7ff 37.5%, #001aff, #061889 62.5%, black 75%);
+  background-position: right center;
+  background-size: 400% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color 200ms linear;
 }
 
-.rainbow:hover {
-  animation: rainbow 1.5s linear infinite;
+.name:hover {
+  background-position: left center;
+  transition: background-position 2500ms ease-out;
 }
 
 section {
